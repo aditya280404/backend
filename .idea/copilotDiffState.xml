@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/main/java/com/n8n/clone/workflow/WorkflowDefinitionRepository.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/main/java/com/n8n/clone/workflow/WorkflowDefinitionRepository.java" />
+              <option name="originalContent" value="package com.n8n.clone.workflow;&#10;&#10;import org.springframework.data.mongodb.repository.MongoRepository;&#10;import org.springframework.stereotype.Repository;&#10;&#10;/**&#10; * Repository for persisting {@link WorkflowDefinition} documents.  This&#10; * allows workflows to be created, retrieved, updated and deleted via&#10; * MongoDB.&#10; */&#10;@Repository&#10;public interface WorkflowDefinitionRepository extends MongoRepository&lt;WorkflowDefinition, String&gt; {&#10;}" />
+              <option name="updatedContent" value="package com.n8n.clone.workflow;&#10;&#10;import org.springframework.data.mongodb.repository.MongoRepository;&#10;import org.springframework.stereotype.Repository;&#10;&#10;import java.util.Optional;&#10;&#10;/**&#10; * Repository for persisting {@link WorkflowDefinition} documents.  This&#10; * allows workflows to be created, retrieved, updated and deleted via&#10; * MongoDB.&#10; */&#10;@Repository&#10;public interface WorkflowDefinitionRepository extends MongoRepository&lt;WorkflowDefinition, String&gt; {&#10;    Optional&lt;WorkflowDefinition&gt; findByName(String name);&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
